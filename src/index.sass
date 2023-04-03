@@ -1,0 +1,15 @@
+// Source mixin
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  height: 800px%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container();
+
+}

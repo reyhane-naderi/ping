@@ -1,0 +1,34 @@
+const [shareUrl, setShareUrl] = useState('');
+
+const handleShareResult = () => {
+    const params = new URLSearchParams();
+    params.append('host', host);
+    params.append('results', JSON.stringify(displayedResults));
+    const url = `${window.location.origin}/result?${params.toString()}`;
+    setShareUrl(url);
+  };
+  const handleCopyUrl = () => {
+    navigator.clipboard.writeText(shareUrl);
+  };
+  </InputGroup>
+          </div>
+          <div className="col-2">
+            <Button
+              variant="primary"
+              onClick={() => {
+                handlePing();
+                setTimeout(displayNextResult, 1000);
+              }}
+            >
+              Ping
+            </Button>
+          </div>
+          {shareUrl && (
+            <>
+<div className="col-6">
+<InputGroup>
+<FormControl readOnly value={shareUrl} />
+<Button variant="secondary" onClick={handleCopyUrl}>
+Copy
+</Button>
+</InputGroup>

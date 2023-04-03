@@ -1,0 +1,31 @@
+body {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  padding: 7px 10px 7px;
+  max-width: 160
+  0px;
+  margin: 0 auto;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* index.css */
+
+/* body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ping-component {
+  height: 50vh;
+} */
